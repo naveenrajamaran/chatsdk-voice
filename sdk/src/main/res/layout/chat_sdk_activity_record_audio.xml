@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/chat_sdk_record_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_audio"
+            android:id="@+id/chat_sdk_util_btn_play_audio"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="left"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_audio"
+            android:id="@+id/chat_sdk_util_btn_record_audio"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:id="@+id/chat_sdk_util_btn_submit_audio"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
