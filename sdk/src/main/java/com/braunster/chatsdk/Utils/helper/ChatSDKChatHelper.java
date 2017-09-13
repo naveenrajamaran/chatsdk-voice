@@ -491,11 +491,11 @@ public class ChatSDKChatHelper implements ChatMessageBoxView.MessageBoxOptionsLi
 
     private void processPickedLocation(int resultCode, Intent data){
         if (resultCode == Activity.RESULT_CANCELED) {
-            if (data.getExtras() == null)
+//            if (data.getExtras() == null)
                 return;
 
-            if (data.getExtras().containsKey(ChatSDKLocationActivity.ERROR))
-                uiHelper.showAlertToast(data.getExtras().getString(ChatSDKLocationActivity.ERROR));
+            //if (data.getExtras().containsKey(ChatSDKLocationActivity.ERROR))
+              //  uiHelper.showAlertToast(data.getExtras().getString(ChatSDKLocationActivity.ERROR));
         }
         else if (resultCode == Activity.RESULT_OK) {
             if (DEBUG)
